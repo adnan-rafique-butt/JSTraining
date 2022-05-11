@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Js Training Day 3</title>
+  </head>
+  <body>
+    <h1>JavaScript Training Day 3</h1>
+    <h2>Events in Js</h2>
+    <h4>~ OnClick Event</h4>
+    <button onclick="sayHello()">Click Me!</button>
+    <h4>~ Double Click Event</h4>
+    <button ondblclick="sayHello()">Double Click Me!</button>
+    <h4>~ Right Click Event</h4>
+    <button oncontextmenu="sayHello()">RIGHT Click Me!</button>
+    <h4>~ OnClick Event (another way)</h4>
+    <button id="clickme">Click Me!</button>
+    <h4>~ OnSubmit Event</h4>
+    <form onsubmit="yourName()">
+      Enter your name: <input type="text" name="name" id="name-inp" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Registration Form -->
+    <h4>~ OnSubmit Event (another way)</h4>
+    <form id="regForm">
+      <label for="user">UserName:</label>
+      <input type="text" name="user" id="user" /><br />
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" /><br />
+      <label for="pass">Password:</label>
+      <input type="password" name="pass" id="pass" /><br />
+      <label for="add">Address:</label>
+      <textarea type="text" name="add" id="address"></textarea><br />
+      <label for="count">Country:</label>
+      <select name="count" id="country">
+        <option selected="" value="Default">
+          (Please select a country with below options)
+        </option>
+        <option value="India">India</option>
+        <option value="America">America</option>
+        <option value="China">China</option>
+        <option value="Japan">Japan</option>
+        <option value="Pakistan">Pakistan</option></select
+      ><br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+
+    <!-- mouseover and mouseout events -->
+    <h4>~ Mouseover and Mouseout Events</h4>
+    <div
+      onmouseover="over()"
+      onmouseout="out()"
+      style="
+        background-color: black;
+        color: white;
+        padding: 20px 20px;
+        width: 50%;
+      "
+    >
+      <h2>Checking Mouseover and Mouseout Events</h2>
+      <p id="mouseevent">Event Status</p>
+    </div>
+
+    <!-- Cookies -->
+    <h2>Cookies in Js</h2>
+    <h4>~ Set Cookie</h4>
+    <input type="button" value="setCookie" onclick="setCookie()" />
+    <h4>~ Get Cookie</h4>
+    <input type="button" value="getCookie" onclick="getCookie()" />
+    <h4>~ Delete Cookie</h4>
+    <input
+      type="button"
+      value="DeleteCookie"
+      onclick="deleteCookie(username)"
+    />
+
+    <!-- Redirect -->
+    <h2>Redirect in Js</h2>
+    <h4>~ Redirect Your Page To Invozone</h4>
+    <input type="button" value="redirect" onclick="redirect()" />
+    <h4>~ Replace Your Page With Invozone</h4>
+    <input type="button" value="replace" onclick="replace()" />
+    <h4>~ Reload</h4>
+    <input type="button" value="reload" onclick="reload()" />
+    <h4>~ Print</h4>
+    <input type="button" value="print" onclick="printPage()" />
+    <script src="script.js"></script>
+  </body>
+</html>
