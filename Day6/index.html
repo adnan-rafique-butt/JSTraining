@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Js Training Day 4</title>
+</head>
+
+<body>
+    <h1>JavaScript Training Day 6</h1>
+    <!-- JAVASCRIPT – Errors and Exceptions -->
+    <h2>JAVASCRIPT – Errors and Exceptions</h2>
+    <h4>~ Syntax Errors</h4>
+    <p id="errsyntax">An exception caused by the incorrect use of a pre-defined syntax. Syntax errors are detected while compiling or parsing source code. For example, if you leave off a closing brace (}) when defining a JavaScript function, you trigger a syntax error.
+        Browser development tools display JavaScript and CSS syntax errors in the console.</p>
+    <h4>~ Runtime Errors </h4>
+    <p id="errruntime">Runtime errors, also called exceptions, occur during execution (after compilation/interpretation). For example, the following line causes a runtime error because here the syntax is correct, but at runtime, it is trying to call a method that does not
+        exist.
+    </p>
+    <h4>~ Logical Errors </h4>
+    <p id="errlogical">Logic errors can be the most difficult type of errors to track down. These errors are not the result of a syntax or runtime error. Instead, they occur when you make a mistake in the logic that drives your script and you do not get the result you expected.
+        You cannot catch those errors, because it depends on your business requirement what type of logic you want to put in your program.
+    </p>
+    <h4>~ try...catch...finally Statement </h4>
+    <p>Practicing try catch and throw</p>
+    <p>Please input a number between 5 and 10:</p>
+    <input id="tryinp" type="text">
+    <button type="button" onclick="validateNumb()">Validate Input</button>
+    <p id="errtry"></p>
+    </hr>
+    <h4>~ Form Validation</h4>
+    <h6 id="valForm"></h6>
+    <form id="prevDefault" onsubmit="return formValidation()">
+        <p id="valName"></p>
+        <input type="text" id="name" placeholder="Name" />
+        <p id="valNumb"></p>
+        <input type="text" id="numb" placeholder="Number" />
+        <p id="valEmail"></p>
+        <input type="text" id="email" placeholder="Email" />
+        <p id="valCountry"></p>
+        <select id="country">
+            <option value = "-1" selected>Choose Your Country</option>
+                     <option value = "1">Pak</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">INDIA</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit" />
+    </form>
+    <!-- Manual Animation -->
+    <h4>~ Manual Animation</h4>
+    <div id="animation"></div>
+    <br>
+    <br>
+    <button onclick="moveDiv()">Move!!!</button>
+    <!-- Automated Animation -->
+    <h4>~ Automated Animation</h4>
+    <div id="autoanimation"></div>
+    <br>
+    <br>
+    <button onclick="autoStart()">Play!!!</button>
+    <button id="animPause" onclick="autoPause()">Pause!!!</button>
+    <button onclick="autoStop()">Stop!!!</button>
+    <!-- MouseOver -->
+    <h4>~ Rollover with a Mouse Event </h4>
+    <h5>MouseOver to change color</h5>
+    <div id="mouseanimation"></div>
+    <!-- Checking For Plugins -->
+    <h4>~ Checking for Plug-Ins </h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Filename</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td id="plugInName"></td>
+            <td id="plugInFilename"></td>
+            <td id="plugInDescription"></td>
+        </tr>
+    </table>
+    <!-- Multimedia Control -->
+    <!-- <embed id="demo" name="demo" src="http://www.amrood.com/games/kumite.swf" width="318" height="300" play="false" loop="false" pluginspage="http://www.macromedia.com/go/getflashplayer" swliveconnect="true">
+    <form name="form" id="form" action="#" method="get">
+        <input type="button" value="Start" onclick="play();" />
+        <input type="button" value="Stop" onclick="stop();" />
+        <input type="button" value="Rewind" onclick="rewind();" />
+    </form> -->
+    <!-- Image Map -->
+    <br>
+    <br>
+    <img src="./images/workplace.jpeg" alt="Workplace" usemap="#imagemap">
+    <map name="imagemap">
+        <area shape="rect" coords="72,0,190,135" alt="Computer" href="https://www.paklap.pk/">
+        <area shape="circle" coords="227,69,16" alt="Cup of coffee" href="https://www.daraz.pk/cups-mugs-saucers/">
+      </map>
+    <!-- JS classes -->
+    <h4>~ Inheritance </h4>
+    <p id="inClass"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>
